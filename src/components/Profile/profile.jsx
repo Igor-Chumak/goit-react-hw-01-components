@@ -1,5 +1,4 @@
 export const Profile = ({ username, tag, location, avatar, stats }) => {
-  console.log(stats);
   return (
     <div className="profile">
       <div className="description">
