@@ -3,14 +3,13 @@ import PropTypes from 'prop-types';
 export const FriendList = friends => {
   return (
     <ul className="friendlist">
-      {/* {friends.map(
-        ({ id, name }) => console.log('id: ', id, 'name: ', name)
+      {friends.map(({ id, name }) => (
         <li className="item" key={id}>
           <span className="status"></span>
           <img className="avatar" src="" alt="User avatar" width="48" />
           <p className="name">{name}</p>
         </li>
-      )} */}
+      ))}
     </ul>
   );
 };
