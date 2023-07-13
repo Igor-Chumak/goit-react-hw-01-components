@@ -10,7 +10,7 @@ import { TransactionHistory } from './transaction_history/transaction_history';
 export const App = () => {
   return (
     <>
-      <h1>Home Work 1</h1>
+      <h1 style={{ textAlign: 'center', color: 'purple' }}>Home Work 1</h1>
       <h2>1 - Profile social net</h2>
       <Profile
         username={user.username}
