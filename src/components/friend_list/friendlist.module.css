@@ -1,0 +1,7 @@
+.isOnline .name {
+    color: green;
+}
+
+.name {
+    color: rgb(255, 0, 0);
+}

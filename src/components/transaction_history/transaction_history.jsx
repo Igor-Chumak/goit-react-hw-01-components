@@ -2,7 +2,7 @@
 
 export const TransactionHistory = items => {
   return (
-    <table className="transactionhistory">
+    <table className="transactionHistory">
       <thead>
         <tr>
           <th>Type</th>
