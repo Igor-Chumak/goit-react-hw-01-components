@@ -26,7 +26,7 @@ export const App = () => {
       <h2 style={{ color: getRandomHexColor() }}>3 - Friend list</h2>
       <FriendList friends={friends} />
       <h2 style={{ color: getRandomHexColor() }}>4 - Transaction history</h2>
-      <TransactionHistory items={transactions} />;
+      <TransactionHistory items={transactions} />
     </>
   );
 };

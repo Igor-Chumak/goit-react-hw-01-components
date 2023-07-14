@@ -36,3 +36,9 @@ Profile.propTypes = {
   avatar: PropTypes.string,
   stats: PropTypes.object,
 };
+
+// #485361 текст
+// #f6f7f8 бразилия
+// #f3f6f9 фон
+// #c0c8cf текст над цифрами
+// #1f3349 цифры
