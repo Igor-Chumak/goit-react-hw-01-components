@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import numberToDivide from '../js/number_to_divide';
 import './profile.css';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
@@ -14,15 +15,15 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
       <ul className="stats">
         <li>
           <span className="label">Followers</span>
-          <span className="quantity">{stats.followers}</span>
+          <span className="quantity">{numberToDivide(stats.followers)}</span>
         </li>
         <li>
           <span className="label">Views</span>
-          <span className="quantity">{stats.views}</span>
+          <span className="quantity">{numberToDivide(stats.views)}</span>
         </li>
         <li>
           <span className="label">Likes</span>
-          <span className="quantity">{stats.likes}</span>
+          <span className="quantity">{numberToDivide(stats.likes)}</span>
         </li>
       </ul>
     </div>
@@ -36,7 +37,3 @@ Profile.propTypes = {
   avatar: PropTypes.string,
   stats: PropTypes.object,
 };
-
-// #f3f6f9 фон
-// #c0c8cf текст над цифрами
-// #1f3349 цифры
