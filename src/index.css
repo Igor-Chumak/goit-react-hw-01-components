@@ -11,12 +11,13 @@ body {
 }
 
 body {
-  background-color: rgb(192, 195, 197);
+  background-color: #d9dcde;
 }
 
 h1,
 h2 {
   text-align: center;
+  text-shadow: 5px 5px 5px #000000;
 }
 
 code {
