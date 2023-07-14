@@ -4,17 +4,17 @@ import getRandomHexColor from '../js/random_hex_color.js';
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <section className="statistics">
+    <section className={css.statistics}>
       {title && (
-        <h2 className="title" style={{ color: getRandomHexColor() }}>
+        <h2 className={css.title} style={{ color: getRandomHexColor() }}>
           {title}
         </h2>
       )}
-      <ul className="statList">
+      <ul className={css.statList}>
         {stats.map(stat => (
-          <li className="item" key={stat.id}>
-            <span className="label">{stat.label}</span>
-            <span className="percentage">{stat.percentage}</span>
+          <li className={css.item} key={stat.id}>
+            <span className={css.label}>{stat.label}</span>
+            <span className={css.percentage}>{stat.percentage}</span>
           </li>
         ))}
       </ul>

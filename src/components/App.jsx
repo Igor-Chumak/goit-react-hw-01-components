@@ -22,7 +22,7 @@ export const App = () => {
       />
       <h2 style={{ color: getRandomHexColor() }}>2- Statistics section</h2>
       <Statistics title="Upload stats" stats={data} />
-      <Statistics stats={data} />
+      {/* <Statistics stats={data} /> */}
       <h2 style={{ color: getRandomHexColor() }}>3 - Friend list</h2>
       <FriendList friends={friends} />
       <h2 style={{ color: getRandomHexColor() }}>4 - Transaction history</h2>
