@@ -1,6 +1,6 @@
 @import-normalize;
-
 /* bring in normalize.css styles */
+
 :root {
   --bg-color: #e7f3fd;
 }
@@ -16,6 +16,22 @@ body {
 
 body {
   background-color: #e7f3fd;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h1,
