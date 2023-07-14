@@ -7,7 +7,7 @@
 .title {
     display: block;
     width: 100%;
-    max-height: 70px;
+    min-height: 70px;
     margin: 0;
     padding-top: 18px;
     padding-bottom: 18px;
@@ -15,14 +15,29 @@
     font-weight: 500;
     font-size: 30px;
     line-height: calc(34/30);
+    text-transform: uppercase;
     text-shadow: none;
+}
+
+.statList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 
 }
 
-.statList {}
+.item {
+    display: flex;
+}
 
-.item {}
+.label {
+    display: block;
+}
 
-.label {}
-
-.percentage {}
+.percentage {
+    display: block;
+}
