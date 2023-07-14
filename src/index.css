@@ -1,5 +1,9 @@
 @import-normalize;
+
 /* bring in normalize.css styles */
+:root {
+  --bg-color: #e7f3fd;
+}
 
 body {
   margin: 0;
