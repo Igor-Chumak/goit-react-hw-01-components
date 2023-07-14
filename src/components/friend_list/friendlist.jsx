@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-import styles from './friendlist.module.css';
+
+//        Styled-components
 // import styled from 'styled-components';
 
 // export const FriendList = ({ friends }) => {
@@ -16,7 +17,9 @@ import styles from './friendlist.module.css';
 //   );
 // };
 
-//     CSS module
+//          CSS module
+import styles from './friendlist.module.css';
+
 export const FriendList = ({ friends }) => {
   return (
     <ul className={styles.friendList}>
