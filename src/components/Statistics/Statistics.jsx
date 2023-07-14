@@ -5,11 +5,7 @@ import getRandomHexColor from '../js/random_hex_color.js';
 export const Statistics = ({ title, stats }) => {
   return (
     <section className={style.statistics}>
-      {title && (
-        <h2 className={style.title} style={{ color: getRandomHexColor() }}>
-          {title}
-        </h2>
-      )}
+      {title && <h2 className={style.title}>{title}</h2>}
       <ul className={style.statList}>
         {stats.map(stat => (
           <li

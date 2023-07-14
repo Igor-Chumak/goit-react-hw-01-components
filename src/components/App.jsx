@@ -12,7 +12,9 @@ export const App = () => {
   return (
     <>
       <h1 style={{ color: getRandomHexColor() }}>Home Work 1</h1>
-      <h2 style={{ color: getRandomHexColor() }}>1 - Profile social net</h2>
+      <h2 style={{ color: getRandomHexColor() }}>
+        1 - Profile social net /Vanilla CSS/
+      </h2>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -20,9 +22,11 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <h2 style={{ color: getRandomHexColor() }}>2- Statistics section</h2>
+      <h2 style={{ color: getRandomHexColor() }}>
+        2- Statistics section /CSS Modules/
+      </h2>
       <Statistics title="Upload stats" stats={data} />
-      {/* <Statistics stats={data} /> */}
+      <Statistics stats={data} />
       <h2 style={{ color: getRandomHexColor() }}>3 - Friend list</h2>
       <FriendList friends={friends} />
       <h2 style={{ color: getRandomHexColor() }}>4 - Transaction history</h2>
