@@ -1,0 +1,11 @@
+.isOnline~.name {
+    color: green;
+}
+
+/* .avatar+.name {
+    color: yellow;
+} */
+
+.name {
+    color: rgb(255, 0, 0);
+}
