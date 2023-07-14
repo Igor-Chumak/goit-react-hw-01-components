@@ -1,6 +1,6 @@
 @import-normalize;
-
 /* bring in normalize.css styles */
+
 *,
 *::before,
 *::after {
@@ -22,7 +22,6 @@ body {
 
 body {
   background-color: #e7f3fd;
-  box-sizing: border-box;
 }
 
 p {
