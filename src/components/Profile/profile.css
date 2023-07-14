@@ -1,7 +1,7 @@
 :root {
     --color-card-profile: #485361;
-    --bg-stats-profile: #eaeaf4;
-    --brd-img-profile: #84878a;
+    --bg-stats-profile: #e2e2e6;
+    --brd-img-profile: #e4e5e8;
 }
 
 .profile {
@@ -70,12 +70,18 @@
 
 .stats {
     width: 100%;
-    background-color: var(--bg-stats-profile);
+    /* background-color: var(--bg-stats-profile); */
     list-style-type: none;
-    padding: 30px 0;
+    /* padding: 30px 0; */
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+}
+
+.stats>li {
+    background-color: var(--bg-stats-profile);
+    padding: 30px 0;
 }
 
 .label {

@@ -1,8 +1,10 @@
 import PropTypes from 'prop-types';
-
+//          Emoution
+//          CSS module
+import styles from './transaction_history.module.css';
 export const TransactionHistory = ({ items }) => {
   return (
-    <table className="transactionHistory">
+    <table className={styles.transactionHistory}>
       <thead>
         <tr>
           <th>Type</th>
