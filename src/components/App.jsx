@@ -1,7 +1,7 @@
-import { Profile } from './profile___/profile';
+import { Profile } from './profile/profile';
 import getRandomHexColor from './js/random_hex_color.js';
 import user from '../data/user.json';
-import { Statistics } from './statistics___/statistics';
+import { Statistics } from './statistics/statistics';
 import data from '../data/data.json';
 import friends from '../data/friends.json';
 import { FriendList } from './friend_list/friendlist';
