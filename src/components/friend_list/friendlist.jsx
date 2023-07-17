@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
-//        Styled-components
-// import styled from 'styled-components';
+//       Emotion
+// import styled from '@emotion/styled'
 
 // export const FriendList = ({ friends }) => {
 //   return (
@@ -17,13 +17,13 @@ import PropTypes from 'prop-types';
 //   );
 // };
 
-//          CSS module
+//  CSS module
 import css from './friendlist.module.css';
 
 export const FriendList = ({ friends }) => {
   return (
     <ul className={css.friendList}>
-      {friends.map(({ id, avatar, name, isOnline }) => (
+      {friends.map(({ id, avatar, name, isOnline = false }) => (
         <li className={css.item} key={id}>
           <span
             className={`${css.status} ${isOnline ? css.isOnline : ''}`}
@@ -42,5 +42,12 @@ export const FriendList = ({ friends }) => {
 };
 
 FriendList.propTypes = {
-  friends: PropTypes.array,
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      avatar: PropTypes.string,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool,
+      id: PropTypes.number.isRequired,
+    })
+  ),
 };

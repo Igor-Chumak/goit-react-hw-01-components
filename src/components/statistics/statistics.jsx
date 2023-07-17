@@ -1,4 +1,8 @@
 import PropTypes from 'prop-types';
+
+//        Styled-components
+// import styled from 'styled-components';
+
 import css from './statistics.module.css';
 import getRandomHexColor from '../../utils';
 
