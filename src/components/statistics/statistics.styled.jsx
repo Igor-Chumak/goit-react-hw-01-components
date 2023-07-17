@@ -38,7 +38,7 @@ export const ItemStat = styled.li`
   flex-basis: calc((100% - 3 * 0px) / 4);
   padding-top: 17px;
   padding-bottom: 17px;
-  /* background-color: ${getRandomHexColor()}; */
+  background-color: ${props => getRandomHexColor()};
 `;
 
 export const LabelStat = styled.span`
