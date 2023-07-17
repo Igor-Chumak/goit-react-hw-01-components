@@ -9,7 +9,7 @@ import {
   ItemStat,
   LabelStat,
   PercentageStat,
-} from './statistics.styled';
+} from './Statistics.styled';
 
 export const Statistics = ({ title, stats }) => {
   return (

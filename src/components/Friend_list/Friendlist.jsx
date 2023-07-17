@@ -8,7 +8,7 @@ import {
   FriendAvatar,
   FriendName,
   FriendStatus,
-} from 'components/friend_list/friendlist.styled';
+} from 'components/Friend_list/Friendlist.styled';
 
 export const FriendList = ({ friends }) => {
   return (

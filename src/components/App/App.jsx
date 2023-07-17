@@ -1,12 +1,12 @@
-import { Profile } from '../profile/profile';
+import { Profile } from '../Profile/Profile';
 import getRandomHexColor from '../../utils';
 import user from '../../data/user.json';
-import { Statistics } from '../Statistics/Statistics2.jsx';
+import { Statistics } from '../Statistics/Statistics.jsx';
 import data from '../../data/data.json';
 import friends from '../../data/friends.json';
-import { FriendList } from '../friend_list/friendlist';
+import { FriendList } from '../Friend_list/Friendlist';
 import transactions from '../../data/transactions.json';
-import { TransactionHistory } from '../Transaction_history2/Transaction_history2';
+import { TransactionHistory } from '../Transaction_history/Transaction_history';
 
 export const App = () => {
   return (
