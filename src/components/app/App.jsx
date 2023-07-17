@@ -1,5 +1,5 @@
 import { Profile } from '../profile/profile';
-import getRandomHexColor from '../utils/random_hex_color';
+import getRandomHexColor from '../utils';
 import user from '../../data/user.json';
 import { Statistics } from '../statistics/statistics';
 import data from '../../data/data.json';
