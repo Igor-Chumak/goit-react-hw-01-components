@@ -18,23 +18,23 @@ import PropTypes from 'prop-types';
 // };
 
 //          CSS module
-import styles from './friendlist.module.css';
+import css from './friendlist.module.css';
 
 export const FriendList = ({ friends }) => {
   return (
-    <ul className={styles.friendList}>
+    <ul className={css.friendList}>
       {friends.map(({ id, avatar, name, isOnline }) => (
-        <li className={styles.item} key={id}>
+        <li className={css.item} key={id}>
           <span
-            className={`${styles.status} ${isOnline ? styles.isOnline : ''}`}
+            className={`${css.status} ${isOnline ? css.isOnline : ''}`}
           ></span>
           <img
-            className={styles.avatar}
+            className={css.avatar}
             src={avatar}
             alt="User avatar"
             width="48"
           />
-          <p className={styles.name}>{name}</p>
+          <p className={css.name}>{name}</p>
         </li>
       ))}
     </ul>

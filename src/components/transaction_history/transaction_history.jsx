@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 //          Emoution
 //          CSS module
-import styles from './transaction_history.module.css';
+import css from './transaction_history.module.css';
 export const TransactionHistory = ({ items }) => {
   return (
-    <table className={styles.transactionHistory}>
+    <table className={css.transactionHistory}>
       <thead>
         <tr>
           <th>Type</th>

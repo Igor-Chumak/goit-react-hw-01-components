@@ -23,16 +23,14 @@ export const App = () => {
         stats={user.stats}
       />
       <h2 style={{ color: getRandomHexColor() }}>
-        2- Statistics section /CSS Modules/
+        2- Statistics section /Styled Components/
       </h2>
       <Statistics title="Upload stats" stats={data} />
       <Statistics stats={data} />
-      <h2 style={{ color: getRandomHexColor() }}>
-        3 - Friend list /Styled Components/
-      </h2>
+      <h2 style={{ color: getRandomHexColor() }}>3 - Friend list /Emotion/</h2>
       <FriendList friends={friends} />
       <h2 style={{ color: getRandomHexColor() }}>
-        4 - Transaction history /Emotion/
+        4 - Transaction history /CSS Modules/
       </h2>
       <TransactionHistory items={transactions} />
     </>
