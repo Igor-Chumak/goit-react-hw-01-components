@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { numberToDivide } from '../utils';
+import { numberToDivide } from '../../utils';
 import './profile.css';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
