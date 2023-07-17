@@ -1,24 +1,19 @@
 import PropTypes from 'prop-types';
 
 //       Emotion
-
-import {
-  FriendsList,
-  FriendCard,
-  FriendAvatar,
-  FriendName,
-  FriendStatus,
-} from 'components/Friend_list/Friendlist.styled';
+import { FriendListItem } from '../Friend_List_Item/FriendListItem';
+import { FriendsList } from 'components/Friend_list/Friendlist.styled';
 
 export const FriendList = ({ friends }) => {
   return (
     <FriendsList>
-      {friends.map(({ id, avatar, name, isOnline }) => (
-        <FriendCard key={id}>
-          <FriendStatus isOnline={isOnline}></FriendStatus>
-          <FriendAvatar src={avatar} alt="User avatar" width="48" />
-          <FriendName>{name}</FriendName>
-        </FriendCard>
+      {friends.map(({ id, avatar, name, isOnline = false }) => (
+        <FriendListItem
+          avatar={avatar}
+          name={name}
+          isOnline={isOnline}
+          key={id}
+        />
       ))}
     </FriendsList>
   );
@@ -53,7 +48,7 @@ FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
       avatar: PropTypes.string,
-      name: PropTypes.string.isRequired,
+      name: PropTypes.string,
       isOnline: PropTypes.bool,
       id: PropTypes.number.isRequired,
     })
